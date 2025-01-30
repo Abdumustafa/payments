@@ -8,4 +8,24 @@ class TextStyles {
     fontWeight: FontWeightHelper.bold,
     color: Colors.black,
   );
+  static TextStyle font22BlackMedium = TextStyle(
+    color: Colors.black,
+    fontSize: 22,
+    fontWeight: FontWeightHelper.medium,
+  );
+  static TextStyle font18Blackmedium = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeightHelper.medium,
+    color: Colors.black,
+  );
+   static TextStyle font22Blackmedium = TextStyle(
+    fontSize: 22,
+    fontWeight: FontWeightHelper.bold,
+    color: Colors.black,
+  );
+  static TextStyle font18BlackextraLight = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeightHelper.regular,
+    color: Colors.black,
+  );
 }

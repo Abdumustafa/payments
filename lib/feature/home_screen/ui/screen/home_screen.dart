@@ -1,12 +1,24 @@
 import 'package:flutter/material.dart';
-
+import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Payment"),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            context.push("/mycardscreen");
+          },
+          child: Text("Start Payment"),
+        ),
+      ),
+    );
   }
 }
-
