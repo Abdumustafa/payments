@@ -3,7 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pays/core/theming/styles.dart';
 
 class TextButtonApp extends StatelessWidget {
-  const TextButtonApp({super.key});
+  const TextButtonApp({super.key, required this.text, required this.onPressed});
+
+  final String text;
+  final Function() onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -23,9 +26,9 @@ class TextButtonApp extends StatelessWidget {
             Size(double.maxFinite, 60.h),
           ),
         ),
-        onPressed: () {},
+        onPressed: onPressed,
         child: Text(
-          "Complet Payment",
+          text,
           style: TextStyles.font18Blackmedium,
         ),
       ),
